@@ -5,9 +5,11 @@ use CTIC\App\Base\Domain\IdentifiableTrait;
 use CTIC\App\Company\Domain\Company;
 use CTIC\Document\Document\Domain\DocumentExpiration;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 use CTIC\Document\Invoice\Domain\Validation\InvoiceExpirationValidation;
 
 /**
+ * @ApiResource
  * @ORM\Entity(repositoryClass="CTIC\Document\Invoice\Infrastructure\Repository\InvoiceExpirationRepository")
  */
 class InvoiceExpiration extends DocumentExpiration implements InvoiceExpirationInterface

@@ -5,9 +5,11 @@ use CTIC\App\Base\Domain\IdentifiableTrait;
 use CTIC\App\Company\Domain\Company;
 use CTIC\Document\Document\Domain\DocumentSeriesSet;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 use CTIC\Document\Invoice\Domain\Validation\InvoiceSeriesSetValidation;
 
 /**
+ * @ApiResource
  * @ORM\Entity(repositoryClass="CTIC\Document\Invoice\Infrastructure\Repository\InvoiceSeriesSetRepository")
  */
 class InvoiceSeriesSet extends DocumentSeriesSet implements InvoiceSeriesSetInterface

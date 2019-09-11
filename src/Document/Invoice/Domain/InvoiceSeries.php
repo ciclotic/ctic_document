@@ -4,9 +4,11 @@ namespace CTIC\Document\Invoice\Domain;
 use CTIC\App\Base\Domain\IdentifiableTrait;
 use CTIC\Document\Document\Domain\DocumentSeries;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 use CTIC\Document\Invoice\Domain\Validation\InvoiceSeriesValidation;
 
 /**
+ * @ApiResource
  * @ORM\Entity(repositoryClass="CTIC\Document\Invoice\Infrastructure\Repository\InvoiceSeriesRepository")
  */
 class InvoiceSeries extends DocumentSeries implements InvoiceSeriesInterface

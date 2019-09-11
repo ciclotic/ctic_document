@@ -10,9 +10,11 @@ use CTIC\App\Rate\Domain\Rate;
 use CTIC\App\RealizationArea\Domain\RealizationArea;
 use CTIC\Document\Document\Domain\Document;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 use CTIC\Document\Invoice\Domain\Validation\InvoiceValidation;
 
 /**
+ * @ApiResource
  * @ORM\Entity(repositoryClass="CTIC\Document\Invoice\Infrastructure\Repository\InvoiceRepository")
  */
 class Invoice extends Document implements InvoiceInterface
