@@ -1,0 +1,239 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4">
+                <label>Nombre fiscal</label>
+                {{ resource.name }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Nombre comercial</label>
+                {{ resource.businessName }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Facturación - CIF / NIF</label>
+                {{ resource.identification }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Facturación - Dirección</label>
+                {{ resource.address }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Facturación - Código Postal</label>
+                {{ resource.postalCode }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Facturación - Población/Ciudad</label>
+                {{ resource.town }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Facturación - Provincia/Estado</label>
+                {{ resource.province }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Facturación - País</label>
+                {{ resource.country }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Envío - CIF / NIF</label>
+                {{ resource.shippingIdentification }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Envío - Dirección</label>
+                {{ resource.shippingAddress }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Envío - Código Postal</label>
+                {{ resource.shippingPostalCode }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Envío - Población/Ciudad</label>
+                {{ resource.shippingTown }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Envío - Provincia/Estado</label>
+                {{ resource.shippingProvince }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Envío - País</label>
+                {{ resource.shippingCountry }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Banco</label>
+                {{ resource.bank }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Iban</label>
+                {{ resource.iban }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Día de pago 1</label>
+                {{ resource.paymentDay1 }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Día de pago 2</label>
+                {{ resource.paymentDay2 }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Descuento pronto pago</label>
+                {{ resource.discountSoonPayment }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Tiene descuento factura</label>
+                {{ resource.discountInvoice }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Descuento por producto</label>
+                {{ resource.discountProduct }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Descuento por servicio</label>
+                {{ resource.discountService }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Alertar cambio de precios</label>
+                {{ resource.alertPriceChanges }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Tipo</label>
+                {{ resource.type }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Número de comensales</label>
+                {{ resource.dinners }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Género</label>
+                {{ resource.gender }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Fecha de nacimiento (TODO)</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Referencia</label>
+                {{ resource.reference }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Periodicidad</label>
+                {{ resource.periodicity }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Método de pago por defecto</label>
+                {{ resource.defaultPaymentMethod }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Tarifa por defecto</label>
+                {{ resource.defaultRate }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>IVA por defecto</label>
+                {{ resource.defaultIva }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>IRPF por defecto</label>
+                {{ resource.defaultIrpf }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Área de realización por defecto</label>
+                {{ resource.defaultRealizationArea }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label>Vencimientos</label>
+                {% for documentExpiration in resource.documentExpiration %}
+                    <div>
+                        Vencimiento: {{ documentExpiration.name }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label>Serie</label>
+                {% for documentSeries in resource.documentSeries %}
+                    <div>
+                        <p>Serie: {% if documentSeries.documentSeriesSet is not null %}{{ documentSeries.documentSeriesSet.name }}{% endif %}
+                        <br>{{ documentSeries.value }}
+                        <br>Alias: {{ documentSeries.alias }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label>Empresa</label>
+                {{ resource.company.taxName }}
+            </div>
+        </div>
+        <br>
+        <div class="cancel-button">
+            {% include '/Form/Buttons/_cancel.html.twig' with {'paths': {'cancel': path('GET_' ~ metadata.parameters.route.root ~ '_' ~  metadata.parameters.route.actions.list, configuration.vars.route.parameters|default({}))}} %}
+        </div>
+    </div>
+</div>

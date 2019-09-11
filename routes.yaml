@@ -1,0 +1,191 @@
+dashboard:
+    path:     /
+    defaults:
+        _controller: 'CTIC\App\Dashboard\Infrastructure\DashboardController'
+        _controller_method: 'indexAction'
+        _controller_create: 'CTIC\App\Dashboard\Application\CreateDashboardController'
+
+login:
+    path:     /login
+    defaults:
+        _controller: 'CTIC\App\User\Infrastructure\LoginController'
+        _controller_method: 'loginAction'
+        _controller_create: 'CTIC\App\User\Application\CreateLoginController'
+
+logout:
+    path:     /logout
+    defaults:
+        _controller: 'CTIC\App\User\Infrastructure\LoginController'
+        _controller_method: 'logoutAction'
+        _controller_create: 'CTIC\App\User\Application\CreateLoginController'
+
+#Invoice
+
+GET_facturas_listado:
+    path:     /facturas/listado
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceController'
+        _controller_method: 'indexAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceController'
+
+GET_facturas_mostrar:
+    path:     /facturas/mostrar/{id}
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceController'
+        _controller_method: 'showAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceController'
+
+GET_facturas_crear:
+    path:     /facturas/crear
+    methods:  [GET, POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceController'
+        _controller_method: 'createAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceController'
+
+GET_facturas_modificar:
+    path:     /facturas/modificar/{id}
+    methods:  [GET, POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceController'
+        _controller_method: 'updateAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceController'
+
+POST_facturas_eliminar:
+    path:     /facturas/eliminar/{id}
+    methods:  [POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceController'
+        _controller_method: 'deleteAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceController'
+
+POST_facturas_eliminargrupo:
+    path:     /facturas/eliminargrupo
+    methods:  [POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceController'
+        _controller_method: 'bulkDeleteAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceController'
+
+
+POST_facturas_descargar:
+    path:     /facturas/descargar
+    methods:  [POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceController'
+        _controller_method: 'downloadAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceController'
+
+#Invoice Series Set
+
+GET_facturas_seriesset_listado:
+    path:     /facturas/seriesset/listado
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceSeriesSetController'
+        _controller_method: 'indexAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceSeriesSetController'
+
+GET_facturas_seriesset_mostrar:
+    path:     /facturas/seriesset/mostrar/{id}
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceSeriesSetController'
+        _controller_method: 'showAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceSeriesSetController'
+
+GET_facturas_seriesset_crear:
+    path:     /facturas/seriesset/crear
+    methods:  [GET, POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceSeriesSetController'
+        _controller_method: 'createAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceSeriesSetController'
+
+GET_facturas_seriesset_modificar:
+    path:     /facturas/seriesset/modificar/{id}
+    methods:  [GET, POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceSeriesSetController'
+        _controller_method: 'updateAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceSeriesSetController'
+
+POST_facturas_seriesset_eliminar:
+    path:     /facturas/seriesset/eliminar/{id}
+    methods:  [POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceSeriesSetController'
+        _controller_method: 'deleteAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceSeriesSetController'
+
+POST_facturas_seriesset_eliminargrupo:
+    path:     /facturas/seriesset/eliminargrupo
+    methods:  [POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceSeriesSetController'
+        _controller_method: 'bulkDeleteAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceSeriesSetController'
+
+
+POST_facturas_seriesset_descargar:
+    path:     /facturas/seriesset/descargar
+    methods:  [POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceSeriesSetController'
+        _controller_method: 'downloadAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceSeriesSetController'
+
+#Invoice Expiration
+
+GET_facturas_vencimientos_listado:
+    path:     /facturas/vencimientos/listado
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceExpirationController'
+        _controller_method: 'indexAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceExpirationController'
+
+GET_facturas_vencimientos_mostrar:
+    path:     /facturas/vencimientos/mostrar/{id}
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceExpirationController'
+        _controller_method: 'showAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceExpirationController'
+
+GET_facturas_vencimientos_crear:
+    path:     /facturas/vencimientos/crear
+    methods:  [GET, POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceExpirationController'
+        _controller_method: 'createAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceExpirationController'
+
+GET_facturas_vencimientos_modificar:
+    path:     /facturas/vencimientos/modificar/{id}
+    methods:  [GET, POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceExpirationController'
+        _controller_method: 'updateAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceExpirationController'
+
+POST_facturas_vencimientos_eliminar:
+    path:     /facturas/vencimientos/eliminar/{id}
+    methods:  [POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceExpirationController'
+        _controller_method: 'deleteAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceExpirationController'
+
+POST_facturas_vencimientos_eliminargrupo:
+    path:     /facturas/vencimientos/eliminargrupo
+    methods:  [POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceExpirationController'
+        _controller_method: 'bulkDeleteAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceExpirationController'
+
+
+POST_facturas_vencimientos_descargar:
+    path:     /facturas/vencimientos/descargar
+    methods:  [POST]
+    defaults:
+        _controller: 'CTIC\Document\Invoice\Infrastructure\InvoiceExpirationController'
+        _controller_method: 'downloadAction'
+        _controller_create: 'CTIC\Document\Invoice\Application\CreateInvoiceExpirationController'
